@@ -101,6 +101,10 @@
   background: #444444;
 }
 
+.vk .uppercase {
+  text-transform: uppercase;
+}
+
 .vk .press {
   border-radius: 30px;
   background: #2cfd72;

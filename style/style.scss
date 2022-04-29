@@ -44,7 +44,6 @@
             height: 25px;
             margin-left: 6px;
             border-radius: 3px;
-            //line-height:20px;
             align-items: center;
             img{
                 width: 25px;
@@ -85,6 +84,9 @@
         &:hover{
             background:#444444;
         }
+    }
+    .uppercase{
+        text-transform: uppercase;
     }
 
     .press{

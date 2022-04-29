@@ -2,7 +2,42 @@ export const Say = function(){
     return null;
 }
 
-export let virtualkeyboard =`<div class="centralizer">
+export let keylang = {
+    "KeyA": ['a','ф'],
+    "KeyB": ['b','и'],
+    "KeyC": ['c','с'],
+    "KeyD": ['d','в'],
+    "KeyF": ['f','а'],
+    "KeyG": ['g','п'],
+    "KeyH": ['h','р'],
+    "KeyI": ['i','ш'],
+    "KeyJ": ['j','о'],
+    "KeyK": ['k','л'],
+    "KeyL": ['l','д'],
+    "KeyM": ['m','ь'],
+    "KeyN": ['n','т'],
+    "KeyO": ['o','щ'],
+    "KeyP": ['p','з'],
+    "KeyQ": ['q','й'],
+    "KeyR": ['r','к'],
+    "KeyS": ['s','ы'],
+    "KeyT": ['t','е'],
+    "KeyU": ['u','г'],
+    "KeyV": ['v','м'],
+    "KeyW": ['w','ц'],
+    "KeyX": ['x','ч'],
+    "KeyY": ['y','Н'],
+    "KeyZ": ['z','я'],
+    "Semicolon" : [';','ж'],
+    "Quote" : ["'",'э'],
+    "Comma": [",",'б'],
+    "Period" : [".",'ю'],
+    "BracketLeft": ["[",'х'],
+    "BracketRight": ["]",'ъ'],
+    "Backquote" : ["\`",'ё'],
+}
+
+export let virtualkeyboard_template =`<div class="centralizer">
     <textarea class="textarea" id="input"></textarea>
     <div class="vk">
         <div class="row" id="Keyboard">
@@ -23,47 +58,47 @@ export let virtualkeyboard =`<div class="centralizer">
         </div>
         <div class="row">
             <div class="button tab nonsymbol" id="Tab">TAB</div>
-            <div class="button" id="KeyQ">Q</div>
-            <div class="button" id="KeyW">W</div>
-            <div class="button" id="KeyE">E</div>
-            <div class="button" id="KeyR">R</div>
-            <div class="button" id="KeyT">T</div>
-            <div class="button" id="KeyY">Y</div>
-            <div class="button" id="KeyU">U</div>
-            <div class="button" id="KeyI">I</div>
-            <div class="button" id="KeyO">O</div>
-            <div class="button" id="KeyP">P</div>
+            <div class="button" id="KeyQ">q</div>
+            <div class="button" id="KeyW">w</div>
+            <div class="button" id="KeyE">e</div>
+            <div class="button" id="KeyR">r</div>
+            <div class="button" id="KeyT">t</div>
+            <div class="button" id="KeyY">y</div>
+            <div class="button" id="KeyU">u</div>
+            <div class="button" id="KeyI">i</div>
+            <div class="button" id="KeyO">o</div>
+            <div class="button" id="KeyP">p</div>
             <div class="button" id="BracketLeft">[</div>
             <div class="button" id="BracketRight">]</div>
-            <div class="button tab nonsymbol" id="Backslash">\</div>
+            <div class="button tab nonsymbol" id="Backslash">&#92;</div>
         </div>
         <div class="row">
             <div class="button caps nonsymbol" id="CapsLock">CAPS</div>
-            <div class="button" id="KeyA">A</div>
-            <div class="button" id="KeyS">S</div>
-            <div class="button" id="KeyD">D</div>
-            <div class="button" id="KeyF">F</div>
-            <div class="button" id="KeyG">G</div>
-            <div class="button" id="KeyH">H</div>
-            <div class="button" id="KeyJ">J</div>
-            <div class="button" id="KeyK">K</div>
-            <div class="button" id="KeyL">L</div>
+            <div class="button" id="KeyA">a</div>
+            <div class="button" id="KeyS">s</div>
+            <div class="button" id="KeyD">d</div>
+            <div class="button" id="KeyF">f</div>
+            <div class="button" id="KeyG">g</div>
+            <div class="button" id="KeyH">h</div>
+            <div class="button" id="KeyJ">j</div>
+            <div class="button" id="KeyK">k</div>
+            <div class="button" id="KeyL">l</div>
             <div class="button" id="Semicolon">;</div>
             <div class="button" id="Quote">'</div>
             <div class="button enter nonsymbol" id="Enter">ENTER<img src="assets/icons/enter.png"></div>
         </div>
         <div class="row">
             <div class="button shiftleft nonsymbol" id="ShiftLeft">SHIFT</div>
-            <div class="button" id="KeyZ">Z</div>
-            <div class="button" id="KeyX">X</div>
-            <div class="button" id="KeyC">C</div>
-            <div class="button" id="KeyV">V</div>
-            <div class="button" id="KeyB">B</div>
-            <div class="button" id="KeyN">N</div>
-            <div class="button" id="KeyM">M</div>
-            <div class="button" id="KeyL">,</div>
-            <div class="button" id="KeyL">.</div>
-            <div class="button" id="KeyL">/</div>
+            <div class="button" id="KeyZ">z</div>
+            <div class="button" id="KeyX">x</div>
+            <div class="button" id="KeyC">c</div>
+            <div class="button" id="KeyV">v</div>
+            <div class="button" id="KeyB">b</div>
+            <div class="button" id="KeyN">n</div>
+            <div class="button" id="KeyM">m</div>
+            <div class="button" id="Comma">,</div>
+            <div class="button" id="Period">.</div>
+            <div class="button" id="Slash">/</div>
             <div class="button shiftright nonsymbol" id="ShiftRight">SHIFT</div>
         </div>
         <div class="row">
