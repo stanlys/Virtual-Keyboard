@@ -3,22 +3,31 @@
     padding: 0;
 }
 
-.centralizer{
+.wrapper{
     margin:0 auto;
     font-family:"Trebuchet MS", "Helvetica", sans-serif
 
 }
+
+.title{
+    margin: 10px auto;
+    text-align: center;
+    font-size:30px;
+    color:rgba(101,134,177,0.8);
+}
+
 .textarea{
     display:block;
-    width:80vw;
+    width:60vw;
     height:200px;
     margin:10px auto;
     padding:10px;
     font-size:18px;
     color:#444444
 }
+.hidden{display:none}
 
-.vk{
+.keyboard{
     width:868px; 
     margin:0 auto;
     padding:5px;
@@ -28,7 +37,7 @@
     border:3px solid #222222;
     border-radius:5px;
 
-    .row{
+    .keyboard__row{
         clear:both;
         width:100%;
         height:50px;
@@ -40,11 +49,12 @@
         margin-bottom:8px;
         margin-right: 6px;
 
-        .button{
+        .keyboard__button{
             height: 25px;
             margin-left: 6px;
             border-radius: 3px;
             align-items: center;
+            line-height: 25px;
             img{
                 width: 25px;
                 filter: invert(100%);
@@ -52,7 +62,7 @@
             }
         }
     }
-    .button{
+    .keyboard__button{
         float:left;
         width:50px;
         height:50px;
@@ -85,6 +95,7 @@
             background:#444444;
         }
     }
+
     .uppercase{
         text-transform: uppercase;
     }
@@ -94,32 +105,32 @@
         background:#2cfd72;
     }
 
-    .backspace,.shiftleft{
+    .Backspace,.ShiftLeft{
         width:132px
         //width: 13.5vw;
     }
-    .shiftright{
-        width: 162px;
+    .ShiftRight{
+        width: 106px;
     }
-    .caps{
+    .CapsLock{
         width:106px
     }
-    .tab{
-        width:91px;
+    .Tab{
+        width:75px;
         //width: 10vw;
     }
-    .enter{
+    .Enter{
         width:132px;
     }
-    .space{
-        width: 356px;
+    .Space{
+        width: 412px;
     }
 }
 
 
-
+/*
 .caseDown,.caseUp,.shiftCaps,.caps{display:block;width:100;min-height:40px}
-.hidden{display:none}
+
 .description,.language,.title{margin:10px auto;text-align:center}
 .title{font-size:30px;color:rgba(101,134,177,0.8);-webkit-text-stroke:1px rgba(114,177,101,0.8);-webkit-text-fill-color:rgba(101,134,177,0.8)}
 .keyboard{width:704px;margin:0 auto;padding:5px;padding-left:0;padding-bottom:0;background:#888888;border:3px solid #222222;border-radius:5px}
@@ -132,3 +143,4 @@
 .keyboard .Backspace,.keyboard .CapsLock,.keyboard .ShiftLeft{width:100px}.keyboard .Delete{width:44px}
 .keyboard .Enter,.keyboard .ShiftRight{width:86px}
 .keyboard .Space{width:330px}
+*/
