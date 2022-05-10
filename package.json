@@ -1,0 +1,33 @@
+{
+  "name": "virtualkeyboard",
+  "version": "1.0.0",
+  "description": "RSS, virtual keyboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "testing",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanlys/webpack.git"
+  },
+  "keywords": [
+    "rss",
+    "virtual",
+    "keyboard",
+    "2022Q1"
+  ],
+  "author": "Stanlys <stanlys@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanlys/webpack/issues"
+  },
+  "homepage": "https://github.com/stanlys/webpack#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
